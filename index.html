@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Storage</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Media Storage</h1>
+        <p class="subtitle">Store and play your media files</p>
+      </header>
+
+      <div class="upload-section">
+        <div class="upload-area" id="uploadArea">
+          <input type="file" id="fileInput" class="file-input" multiple />
+          <div class="upload-content">
+            <div class="upload-icon">📁</div>
+            <p>Drag files here or click to upload</p>
+            <span class="upload-hint">Supports video, audio, and text files</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="files-grid" id="filesGrid"></div>
+      <div class="media-player" id="mediaPlayer"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
